@@ -27,6 +27,3 @@ def dog_detector(img_path):
     prediction = ResNet50_predict_labels(img_path)
     result = "dog" if (prediction <= 268) & (prediction >= 151) else "notadog"
     return result
-
-test = dog_detector("/home/simonvillalon/Downloads/1.jpg")
-print(test)
